@@ -1,7 +1,18 @@
 import { Button } from "./Button";
 import { ButtonToggle } from "./ButtonToggle";
 
-export const Card = ({ logo, name, description, isActive }) => {
+export const Card = ({
+  logo,
+  name,
+  description,
+  isActive,
+  extensions,
+  setExtensions,
+}) => {
+  const onToggle = () => {
+    console.log(extensions);
+  };
+
   return (
     <article className="bg-Neutral-0 dark:bg-Neutral-800 rounded-xl mt-4 p-4 shadow-md dark:text-Neutral-0">
       <main className="flex gap-4 items-start mb-4">
