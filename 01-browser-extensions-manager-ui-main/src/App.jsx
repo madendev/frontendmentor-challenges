@@ -1,8 +1,16 @@
+import { CardsContainer } from "./components/CardsContainer.jsx";
+import { Filters } from "./components/Filters.jsx";
+import { Header } from "./components/Header.jsx";
+
 function App() {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <main className="light-gradient dark:dark-gradient min-h-screen flex flex-col items-center">
+      <section className="w-[343px] my-6">
+        <Header />
+        <Filters />
+        <CardsContainer />
+      </section>
+    </main>
   );
 }
 
