@@ -1,14 +1,44 @@
-# React + Vite
+# 💻 [Nombre del Proyecto]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Breve descripción del reto o funcionalidad implementada.
 
-Currently, two official plugins are available:
+## 📸 Vista previa
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Preview](./screenshot.jpg)
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías usadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Astro
+- Tailwind CSS
+- TypeScript
+- [otras que uses]
 
-https://www.youtube.com/watch?v=myzqYJJHhmQ
+## 📦 Instalación y uso
+
+```bash
+npm install
+npm run dev
+```
+
+## 🎯 Reto original
+
+Este proyecto es un reto de [Frontend Mentor](https://www.frontendmentor.io) — [ver reto aquí](https://www.frontendmentor.io/challenges/...)
+
+## 🧠 Lo que aprendí
+
+- ...
+- ...
+- ...
+
+## 🔒 Licencia
+
+Distribuido bajo la licencia MIT.
+
+
+### ✅ Recomendaciones:
+- Guarda una copia como `README-template.md`.
+- Sustituye `[Nombre del Proyecto]` por el nombre real del reto.
+- Añade `screenshot.jpg` dentro del proyecto para la vista previa.
+- Rellena la sección "Lo que aprendí" al finalizar cada reto.
+
+¿Quieres que te genere automáticamente este README cada vez que empieces un nuevo reto? Puedo darte un comando o script sencillo para eso también.

@@ -1,24 +1,32 @@
 import { Button } from './Button';
 import { ButtonToggle } from './ButtonToggle';
 
-export const Card = ({ logo, name, description, isActive, extensions, setExtensions }) => {
-  console.log(extensions);
-
+export const Card = ({ logo, name, description, isActive, setExtensions, extensions }) => {
   const onToggle = () => {
-    const currentExtension = extensions.filter((extension) => extension.name === name[0]);
-
-    console.log(currentExtension);
+    const currentExtension = extensions.filter((extension) => extension.name === name)[0];
 
     const updateExtension = {
       ...currentExtension,
       isActive: !currentExtension.isActive,
     };
 
-    console.log(updateExtension);
+    const newExtensions = extensions.map((extension) => {
+      if (extension.name === name) {
+        extension = { ...updateExtension };
+      }
+      return extension;
+    });
+
+    setExtensions(newExtensions);
+  };
+
+  const onRemove = () => {
+    const filteredExtension = extensions.filter((extension) => extension.name !== name);
+    setExtensions(filteredExtension);
   };
 
   return (
-    <article className='bg-Neutral-0 dark:bg-Neutral-800 rounded-xl mt-4 p-4 shadow-md dark:text-Neutral-0'>
+    <article className='bg-Neutral-0 dark:bg-Neutral-800 rounded-xl p-4 shadow-sm dark:text-Neutral-0'>
       <main className='flex gap-4 items-start mb-4'>
         <img src={logo} alt={name} />
         <div>
@@ -27,8 +35,10 @@ export const Card = ({ logo, name, description, isActive, extensions, setExtensi
         </div>
       </main>
       <footer className='flex justify-between items-center'>
-        <Button textSmall>Remove</Button>
-        <ButtonToggle onClick={onToggle} checked={isActive} />
+        <Button handleClick={onRemove} textSmall>
+          Remove
+        </Button>
+        <ButtonToggle onClick={onToggle} isActive={isActive} />
       </footer>
     </article>
   );
