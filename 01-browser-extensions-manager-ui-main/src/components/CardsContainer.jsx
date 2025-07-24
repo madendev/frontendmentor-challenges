@@ -1,30 +1,25 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Card } from "./Card";
+import { Card } from './Card';
 
-import data from "../../data.json";
+import data from '../../data.json';
 
 export const CardsContainer = ({ filter }) => {
   const [extensions, setExtensions] = useState(data);
 
   let filteredExtensions = [];
 
-  if (filter === "Inactive") {
+  if (filter === 'Inactive') {
     filteredExtensions = extensions.filter((extension) => !extension.isActive);
-  } else if (filter === "Active") {
+  } else if (filter === 'Active') {
     filteredExtensions = extensions.filter((extension) => extension.isActive);
   } else {
     filteredExtensions = extensions;
   }
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
+    <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-3'>
       {filteredExtensions.map((extension) => (
-        <Card
-          key={extension.name}
-          {...extension}
-          extensions={extensions}
-          setExtensions={setExtensions}
-        />
+        <Card key={extension.name} {...extension} extensions={extensions} setExtensions={setExtensions} />
       ))}
     </div>
   );

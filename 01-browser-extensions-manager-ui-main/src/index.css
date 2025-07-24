@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -17,7 +17,7 @@
 }
 
 #toggle-switch::after {
-  content: "";
+  content: '';
   @apply size-5  rounded-full bg-Neutral-0 absolute left-[4px] top-[4px] transform transition duration-200;
 }
 
