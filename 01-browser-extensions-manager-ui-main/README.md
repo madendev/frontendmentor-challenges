@@ -4,7 +4,7 @@ Breve descripción del reto o funcionalidad implementada.
 
 ## 📸 Vista previa
 
-![Preview](./screenshot-project.jpg)
+![Preview](./public/screenshot-project.jpg)
 
 ## 🚀 Tecnologías usadas
 
