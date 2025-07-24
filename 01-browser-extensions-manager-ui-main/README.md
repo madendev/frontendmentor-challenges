@@ -1,4 +1,4 @@
-# 💻 [Browser extension manager UI - FontendMentor Challenger | by Manuel Denis Developer]
+# 💻 Browser extension manager UI - FontendMentor Challenger | by Manuel Denis Developer
 
 Breve descripción del reto o funcionalidad implementada.
 
