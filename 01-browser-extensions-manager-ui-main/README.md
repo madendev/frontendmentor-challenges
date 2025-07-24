@@ -1,17 +1,18 @@
-# 💻 [Nombre del Proyecto]
+# 💻 [Browser extension manager UI - FontendMentor Challenger | by Manuel Denis Developer]
 
 Breve descripción del reto o funcionalidad implementada.
 
 ## 📸 Vista previa
 
-![Preview](./screenshot.jpg)
+![Preview](./screenshot-project.jpg)
 
 ## 🚀 Tecnologías usadas
 
-- Astro
+- Vite
+- HTML 
 - Tailwind CSS
-- TypeScript
-- [otras que uses]
+- JavaScript
+- React
 
 ## 📦 Instalación y uso
 
@@ -40,5 +41,3 @@ Distribuido bajo la licencia MIT.
 - Sustituye `[Nombre del Proyecto]` por el nombre real del reto.
 - Añade `screenshot.jpg` dentro del proyecto para la vista previa.
 - Rellena la sección "Lo que aprendí" al finalizar cada reto.
-
-¿Quieres que te genere automáticamente este README cada vez que empieces un nuevo reto? Puedo darte un comando o script sencillo para eso también.
